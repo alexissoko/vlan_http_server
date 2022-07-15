@@ -1,0 +1,26 @@
+# download python windows: https://www.python.org/downloads/
+
+curl https://www.python.org/ftp/python/3.7.9/python-3.7.9-amd64.exe --output python3.exe
+
+python3.exe
+
+# getting pip
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+
+python3 get-pip.py
+
+#getting virtual env
+python3 -m pip install --user virtualenv
+
+#setting env for development
+virtualenv --python=python3.7 name_of_the_env
+
+source name_of_the_env/bin/activate
+
+# getting packages
+pip install -r requirements.txt
+
+# running server with Python + Django
+python3 manage.py runserver
+
+# API locked and loaded
